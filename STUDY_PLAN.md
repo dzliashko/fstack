@@ -147,7 +147,7 @@ Do not spend weeks repeating material that is already understood, but verify und
 
 Status:
 
-`Not started`
+`Completed — initial assessment completed on 2026-08-14; exact starting point recorded in PROGRESS.md.`
 
 ---
 
@@ -244,7 +244,7 @@ Practice with business rules such as:
 
 Status:
 
-`Not started`
+`Completed at a basic level — reinforced with invoice/payment validation exercises on 2026-08-14; schedule later repetition.`
 
 ---
 

@@ -36,29 +36,27 @@ Study pace:
 
 ## Current phase
 
-`Phase 0 — Initial assessment and development environment`
+`Phase 1 — JavaScript and TypeScript programming fundamentals`
 
 ## Current topic
 
-`Assess JavaScript / TypeScript fundamentals and prepare the TypeScript + Node.js learning environment.`
+`Begin Phase 1.4 — Functions, while continuing to reinforce precise boolean reasoning and TypeScript types.`
 
 ## Current exercise
 
-None yet.
+`Exercise 000 — Initial assessment and boolean-logic reinforcement — completed with guidance.`
 
 ## Recommended next action
 
-Run a short initial assessment covering:
+Start a focused lesson on Phase 1.4 functions:
 
-- variables and basic types;
-- conditions;
-- loops;
-- functions;
-- arrays and objects;
-- basic problem decomposition;
-- very basic asynchronous-code awareness.
+- parameters vs arguments;
+- return values vs console output;
+- local scope;
+- early returns;
+- decomposing one business rule into small functions.
 
-Then start at the earliest weak prerequisite rather than automatically starting from zero.
+Continue checking boolean negation and boundary conditions in later exercises. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -352,19 +350,45 @@ Possible topics:
 
 # Completed topics
 
-None recorded yet for this learning plan.
+- Phase 0.1 — Initial programming assessment.
+- Phase 1.2 — Conditions and boolean logic at a basic level.
 
 ---
 
 # Topics in progress
 
-- Initial level assessment.
+- Phase 1.4 — Functions.
+- Precise reasoning about boolean expressions and boundary conditions.
 
 ---
 
 # Exercises
 
-No exercises completed yet for this learning plan.
+## Exercise 000 — Initial assessment and boolean-logic reinforcement
+
+**Topic:**
+Variables, conditions, functions, arrays, objects/references, debugging, decomposition, and introductory async-code reading.
+
+**Project connection:**
+Invoice status, outstanding balance, and payment-validation rules.
+
+**Result:**
+Completed with help.
+
+**What I understood:**
+Basic value copying vs object references, condition evaluation, early returns, typed function parameters/results, `for...of` accumulation, and validation of whether a payment may be recorded.
+
+**Problems encountered:**
+Initially used `any` for a numeric array, confused a condition with a concrete function input, and added an unstated overpayment restriction. Needed repeated practice to state the logical complement of `<` precisely.
+
+**Hints required:**
+Significant progressive hints; no full implementation was supplied.
+
+**Important mistake:**
+The original payment check compared the post-payment total with the invoice total even though the requirement only asked whether the invoice was already paid before the new payment.
+
+**Needs repetition:**
+Yes — boolean negation, boundary values, and translating requirements into exactly the requested conditions.
 
 For completed exercises, use this format:
 
@@ -398,13 +422,22 @@ Yes / No
 
 # Concepts understood well
 
-None recorded yet for this learning plan.
+- Primitive values are copied by value in the assessed examples.
+- Object variables can reference the same object.
+- Basic `if`/`else`, comparisons, `&&`, `||`, and early-return control flow.
+- Simple typed functions returning `number`, `string`, or `boolean`.
+- Basic `for...of` loop with an accumulator.
 
 ---
 
 # Concepts needing practice
 
-None recorded yet.
+- Precise boolean negation and describing the remaining branch after earlier conditions fail.
+- Boundary conditions such as `< 0` versus `<= 0`.
+- Function invocation, return values, and console output as distinct concepts.
+- Array typing without falling back to `any`.
+- Explaining decomposition and control flow in precise words.
+- Async execution order; current awareness is intuitive rather than systematic.
 
 ---
 
@@ -435,7 +468,7 @@ Potential categories to track include:
 
 ## Current level
 
-`Not assessed`
+`Beginner — can compare actual and expected results using a truth table after guidance; needs more practice identifying concrete failing inputs and describing return behavior precisely.`
 
 Track progress in:
 
@@ -457,7 +490,7 @@ Track progress in:
 
 ## Current level
 
-`Not assessed`
+`Beginner / guided — can implement small business rules and revise them from counterexamples, but needs help avoiding unstated requirements and explaining the logic precisely.`
 
 Track:
 
@@ -500,13 +533,14 @@ Can approach unfamiliar problems, read documentation, design solutions, evaluate
 
 Current independence level:
 
-`Not assessed`
+`Level 2 — Guided (provisional, based on the initial assessment).`
 
 ---
 
 # Topics to repeat
 
-None yet.
+- Boolean negation and complementary comparisons — required several attempts during Exercise 000; last practiced 2026-08-14; revisit through a different validation exercise during the functions topic.
+- Boundary-value validation — `< 0` versus `<= 0`; last practiced 2026-08-14; revisit with zero and negative business inputs.
 
 For each topic record:
 
@@ -519,7 +553,22 @@ For each topic record:
 
 # Assessments
 
-No assessments completed yet for this learning plan.
+## Initial programming assessment — 2026-08-14
+
+**Topics tested:**
+Variables, primitive values, conditions, loops, functions, arrays, objects/references, basic debugging, decomposition, and basic async awareness.
+
+**Strengths:**
+Understands basic control flow, object-reference behavior, typed function structure, and simple loops. Correctly predicted the introductory promise example as `A`, `C`, `B`, while explicitly noting low confidence.
+
+**Weaknesses:**
+Precise boolean reasoning, boundary conditions, distinguishing return values from output, avoiding `any`, and translating requirements without adding extra rules.
+
+**Independence:**
+Required several progressive hints and corrected the work successfully without receiving a full solution.
+
+**Recommended next step:**
+Phase 1.4 functions, with spaced repetition of boolean logic and validation boundaries.
 
 Use assessments periodically rather than after every lesson.
 
@@ -536,7 +585,9 @@ Record:
 
 # Learning observations
 
-None yet.
+- The student responds well to concrete counterexamples and truth tables.
+- Written explanations currently reveal gaps that correct-looking code alone can hide; continue requiring short reasoning notes.
+- Do not restart all fundamentals from zero; verify remaining Phase 1 topics with focused exercises.
 
 Keep this section concise.
 
@@ -546,4 +597,4 @@ Record only observations useful for future teaching.
 
 # Next milestone
 
-Complete the initial assessment, determine the correct starting point in Phase 1 of `STUDY_PLAN.md`, and begin TypeScript fundamentals without skipping weak prerequisites.
+Complete Phase 1.4 functions with an independently implemented exercise that demonstrates parameters, returns, local scope, early returns, and decomposition. Then reassess whether Phase 1.1 and Phase 1.3 need focused reinforcement before continuing to arrays and objects.
