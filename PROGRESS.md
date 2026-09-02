@@ -4,7 +4,7 @@
 
 Primary language:
 
-`TypeScript`
+`JavaScript`
 
 Runtime / frontend:
 
@@ -12,15 +12,15 @@ Runtime / frontend:
 
 Primary goal:
 
-`Become a backend-oriented full-stack developer capable of building real business applications independently.`
+`Become a qualified backend-oriented full-stack JavaScript developer capable of independently designing, building, testing, deploying, and maintaining real applications.`
 
 Main learning project:
 
-`Financial / Business Management System`
+`Inoreader-like Feed Reader`
 
 Starting level:
 
-`Beginner. Exact TypeScript / JavaScript / web-development level still needs an initial assessment.`
+`Beginner / guided. Initial programming assessment completed on 2026-08-14; detailed strengths and weak areas are tracked below.`
 
 Study start:
 
@@ -28,7 +28,7 @@ Study start:
 
 Study pace:
 
-`Mastery-based. Weekly study time is not fixed in this file yet.`
+`Mastery-based, with an approximately 20-week control horizon toward a deployed core full-stack v1. The full roadmap continues beyond that horizon when deeper backend/professional topics remain.`
 
 ---
 
@@ -36,64 +36,69 @@ Study pace:
 
 ## Current phase
 
-`Phase 1 — JavaScript and TypeScript programming fundamentals`
+`Phase 1 — JavaScript programming fundamentals`
 
 ## Current topic
 
-`Begin Phase 1.4 — Functions, while continuing to reinforce precise boolean reasoning and TypeScript types.`
+`Begin Phase 1.4 — Functions, while continuing to reinforce precise boolean reasoning and JavaScript fundamentals.`
 
 ## Current exercise
 
-`Exercise 000 — Initial assessment and boolean-logic reinforcement — completed with guidance.`
+`Exercise 002 — Feed title normalization and refresh status — completed after one hint about local variable declaration.`
 
 ## Recommended next action
 
-Start a focused lesson on Phase 1.4 functions:
-
-- parameters vs arguments;
-- return values vs console output;
-- local scope;
-- early returns;
-- decomposing one business rule into small functions.
-
-Continue checking boolean negation and boundary conditions in later exercises. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+Continue Phase 1.4 functions with pure vs impure behavior, then cover default parameters and introduce arrow functions only after normal function declarations are secure. Continue checking boolean negation and boundary conditions in later exercises. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
 # Learning direction
 
-The course is **backend-oriented full-stack**.
+The course is **backend-oriented full-stack**, with backend depth taking priority over frontend breadth.
 
 Priority order:
 
-1. programming and TypeScript fundamentals;
+1. programming and JavaScript fundamentals;
 2. Node.js and asynchronous programming;
 3. HTTP and REST APIs;
 4. SQL and PostgreSQL;
-5. backend application structure;
-6. business logic and correctness;
-7. testing and debugging;
-8. React and frontend integration;
-9. authentication and authorization;
-10. Docker, deployment, and production fundamentals;
-11. more advanced backend topics when justified.
+5. business logic and correctness;
+6. testing and debugging;
+7. complete framework-free backend structure and behavior;
+8. Fastify after the framework-free backend is understood;
+9. authentication, authorization, and security;
+10. React and frontend integration;
+11. Docker, deployment, and production fundamentals;
+12. more advanced backend topics when justified.
 
 The main project should grow throughout the roadmap rather than being postponed until the end.
+
+Control horizon: approximately **20 weeks** for the current intensive learning period. The target is a strong deployed core full-stack v1 and readiness for realistic work, not completion of every advanced phase and not permission to skip weak prerequisites.
+
+Early-delivery rule:
+
+- basic HTML/CSS/browser skills begin in parallel after the JavaScript foundation starts;
+- first simple static page should be deployed early;
+- first Node.js API should be deployed when it becomes coherent;
+- the PostgreSQL-backed API should be deployed before the course reaches the deep production phase;
+- React remains secondary to backend depth but must arrive early enough to produce a complete full-stack application within the control horizon.
+
+The main project is fixed as the **Inoreader-like Feed Reader**. Small freelance/client-style exercises may be added, but must not replace the main project or weaken the backend-first sequence.
 
 ---
 
 # Main project status
 
-## Financial / Business Management System
+## Inoreader-like Feed Reader
 
 **Goal:**  
-Build a realistic full-stack business application while learning software development.
+Build a realistic Inoreader-like RSS/Atom feed reader while learning software development, with backend depth as the primary specialization.
 
 **Stack target:**
 
-- TypeScript;
+- JavaScript;
 - Node.js;
-- NestJS after Node.js / HTTP fundamentals;
+- Fastify — only after a complete framework-free Node.js backend has been built and understood;
 - PostgreSQL;
 - React;
 - REST / JSON;
@@ -105,27 +110,29 @@ Build a realistic full-stack business application while learning software develo
 **Current status:**  
 `Planned — implementation has not started.`
 
-**Initial domain scope:**
+**Initial single-user domain scope:**
 
-- users;
-- companies;
-- customers;
-- suppliers;
-- invoices;
-- invoice items;
-- payments;
-- basic reporting.
+- feeds;
+- subscriptions;
+- articles;
+- unread/read state;
+- starred state;
+- manual/basic feed refresh.
+
+Authentication and real multi-user ownership are deliberately introduced later, after the framework-free backend has been understood and migrated to Fastify.
 
 Later modules may include:
 
-- products/services;
-- bank accounts;
-- financial transactions;
-- accounts receivable/payable;
-- budgets;
-- audit history;
-- imports;
-- background jobs.
+- folders/categories;
+- RSS/Atom discovery and parsing hardening;
+- scheduled refresh;
+- retries/backoff;
+- OPML import/export;
+- filtering/search;
+- notifications/digests;
+- background jobs;
+- Redis/queues only when justified;
+- observability/health information.
 
 Do not build later modules before the learning plan reaches the necessary concepts.
 
@@ -141,21 +148,21 @@ Status:
 
 Expected learning:
 
-- TypeScript basics;
+- JavaScript basics;
 - functions;
 - objects;
 - arrays;
-- type aliases/interfaces;
+- data modeling and runtime validation;
 - modules;
 - validation logic;
-- simple financial/business rules.
+- simple feed-reader/domain rules.
 
 Possible project fragments:
 
-- represent a customer;
-- represent an invoice;
-- calculate invoice totals;
-- determine invoice status;
+- represent a feed;
+- represent a subscription;
+- represent an article;
+- count/filter unread articles;
 - search/filter collections.
 
 ---
@@ -176,11 +183,13 @@ Expected learning:
 - async/await;
 - promises;
 - environment variables;
+- outbound HTTP requests;
+- RSS/Atom parsing basics;
 - project structure.
 
 ---
 
-## Milestone 2 — First HTTP API
+## Milestone 2 — First framework-free HTTP API
 
 Status:
 
@@ -201,8 +210,8 @@ Expected learning:
 
 Initial resource candidates:
 
-- customers;
-- invoices.
+- subscriptions;
+- articles.
 
 ---
 
@@ -224,7 +233,7 @@ Expected learning:
 
 ---
 
-## Milestone 4 — Structured backend application
+## Milestone 4 — Feed Reader domain rules on framework-free Node.js
 
 Status:
 
@@ -232,19 +241,74 @@ Status:
 
 Expected learning:
 
-- NestJS;
-- modules;
-- controllers;
-- services/providers;
-- dependency injection;
-- DTO/validation concepts;
+- feed/subscription lifecycle;
+- RSS/Atom ingestion rules;
+- article deduplication;
+- unread/read and starred-state correctness;
+- database transactions;
+- runtime validation;
+- idempotent refresh/retry concepts;
+- keeping domain rules independent from HTTP/framework code.
+
+---
+
+## Milestone 5 — Complete framework-free single-user core backend
+
+Status:
+
+`Not started`
+
+Expected learning:
+
+- plain JavaScript + Node.js core HTTP backend;
+- routing without a web framework;
+- request/body/path/query parsing;
+- runtime validation;
+- consistent HTTP error handling;
+- separation of HTTP, business, and database concerns;
+- outbound feed fetching + RSS/Atom parsing;
+- PostgreSQL with direct SQL / driver;
+- business transactions;
+- configuration and logging;
+- unit and integration tests;
+- explaining the full request → business logic → database → response path in my own words;
+- using one explicit local/demo user context without pretending login/auth exists yet;
+- basic outbound-request safety and no unrestricted public arbitrary-URL feed-fetch endpoint before SSRF controls are implemented.
+
+Required project workflow:
+
+`Add Feed URL → Subscription → Refresh/Parse → Persist Articles → List Unread → Mark Read/Starred`
+
+Fastify is forbidden until this milestone is complete and I can explain the implementation without framework terminology. Focused libraries such as the PostgreSQL driver and XML parser are allowed; a web framework is not.
+
+---
+
+## Milestone 6 — Fastify migration and structured backend
+
+Status:
+
+`Not started`
+
+Expected learning:
+
+- Fastify instance;
+- routes and handlers;
+- plugins;
+- hooks;
+- encapsulation;
+- request/reply lifecycle;
+- route schemas;
+- validation and serialization;
+- centralized error handling;
 - configuration;
 - separation of concerns;
-- backend tests.
+- preserving API behavior with existing tests while migrating from framework-free Node.js.
+
+Do not redesign the application during the first migration. First reproduce the same behavior in Fastify; improvements come after the comparison is understood.
 
 ---
 
-## Milestone 5 — Financial business rules
+## Milestone 7 — Authentication and authorization
 
 Status:
 
@@ -252,17 +316,21 @@ Status:
 
 Expected learning:
 
-- invoice lifecycle;
-- partial and full payments;
-- monetary correctness;
-- database transactions;
-- validation;
-- idempotency concepts;
-- auditability concepts.
+- password hashing;
+- login/logout;
+- sessions or token-based authentication as selected later;
+- ownership and per-user data isolation;
+- migration from the single-user database model to `users` / `user_id` ownership;
+- permissions where justified;
+- protected API routes;
+- SSRF/outbound feed-fetch protections and safe handling of untrusted feed/article content;
+- basic web security.
 
 ---
 
-## Milestone 6 — React frontend
+---
+
+## Milestone 8 — React frontend
 
 Status:
 
@@ -278,36 +346,20 @@ Expected learning:
 - routing;
 - API calls;
 - loading/error states;
-- business tables and filters.
+- article/feed lists, filters, and pagination;
+- protected frontend routes/screens after backend authentication exists.
 
 Initial screens:
 
-- customers;
-- invoices;
-- payments.
+- subscriptions/feeds;
+- article list/details;
+- starred/unread state.
 
 ---
 
-## Milestone 7 — Authentication and authorization
-
-Status:
-
-`Not started`
-
-Expected learning:
-
-- password hashing;
-- login/logout;
-- sessions or token-based authentication as selected later;
-- roles;
-- permissions;
-- protected API routes;
-- protected frontend routes;
-- basic web security.
-
 ---
 
-## Milestone 8 — Production fundamentals
+## Milestone 9 — Production fundamentals
 
 Status:
 
@@ -325,7 +377,7 @@ Expected learning:
 
 ---
 
-## Milestone 9 — Advanced backend features
+## Milestone 10 — Advanced backend features
 
 Status:
 
@@ -370,25 +422,77 @@ Possible topics:
 Variables, conditions, functions, arrays, objects/references, debugging, decomposition, and introductory async-code reading.
 
 **Project connection:**
-Invoice status, outstanding balance, and payment-validation rules.
+General business-rule validation used only for the initial programming assessment; these concepts now transfer to Feed Reader domain rules.
 
 **Result:**
 Completed with help.
 
 **What I understood:**
-Basic value copying vs object references, condition evaluation, early returns, typed function parameters/results, `for...of` accumulation, and validation of whether a payment may be recorded.
+Basic value copying vs object references, condition evaluation, early returns, function parameters/results, `for...of` accumulation, and validation of a small business rule.
 
 **Problems encountered:**
-Initially used `any` for a numeric array, confused a condition with a concrete function input, and added an unstated overpayment restriction. Needed repeated practice to state the logical complement of `<` precisely.
+Initially handled a numeric array too loosely, confused a condition with a concrete function input, and added an unstated restriction. Needed repeated practice to state the logical complement of `<` precisely.
 
 **Hints required:**
 Significant progressive hints; no full implementation was supplied.
 
 **Important mistake:**
-The original payment check compared the post-payment total with the invoice total even though the requirement only asked whether the invoice was already paid before the new payment.
+The original validation added behavior not requested by the requirement. This remains an important lesson: implement exactly the stated rule before adding assumptions.
 
 **Needs repetition:**
 Yes — boolean negation, boundary values, and translating requirements into exactly the requested conditions.
+
+## Exercise 001 — Subscription eligibility decomposition
+
+**Topic:**
+Functions, return values, early returns, boundary conditions, and decomposition.
+
+**Project connection:**
+Inoreader-like Feed Reader subscription rule.
+
+**Result:**
+Completed after one boundary-condition hint.
+
+**What I understood:**
+Can split a subscription decision into small functions and return booleans without confusing return values with console output.
+
+**Problems encountered:**
+Initially treated only equality with the subscription limit as full and missed the case where the current count already exceeds the limit.
+
+**Hints required:**
+Small.
+
+**Important mistake:**
+The available-slot condition must reject both equality and values above the maximum.
+
+**Needs repetition:**
+Yes — continue checking boundary comparisons in later exercises.
+
+## Exercise 002 — Feed title normalization and refresh status
+
+**Topic:**
+Parameters and arguments, return values, local scope, early returns, and decomposition.
+
+**Project connection:**
+Inoreader-like Feed Reader title normalization and refresh-state decision.
+
+**Result:**
+Completed after one local-scope hint.
+
+**What I understood:**
+Can call a helper function, store its return value locally, order early-return conditions, and return formatted status strings.
+
+**Problems encountered:**
+Initially assigned to `result` without declaring it, which could create a global variable outside strict mode.
+
+**Hints required:**
+Small.
+
+**Important mistake:**
+Local intermediate values must be declared explicitly with `const` or `let`; also prefer strict equality when coercion is not intended.
+
+**Needs repetition:**
+Yes — reinforce explicit declarations and scope in later exercises.
 
 For completed exercises, use this format:
 
@@ -398,7 +502,7 @@ For completed exercises, use this format:
 Topic name
 
 **Project connection:**  
-None / Financial-Business project feature
+None / Inoreader-like Feed Reader project feature
 
 **Result:**  
 Completed / Completed with help / Needs revision
@@ -425,7 +529,7 @@ Yes / No
 - Primitive values are copied by value in the assessed examples.
 - Object variables can reference the same object.
 - Basic `if`/`else`, comparisons, `&&`, `||`, and early-return control flow.
-- Simple typed functions returning `number`, `string`, or `boolean`.
+- Simple functions returning numbers, strings, or booleans.
 - Basic `for...of` loop with an accumulator.
 
 ---
@@ -435,7 +539,6 @@ Yes / No
 - Precise boolean negation and describing the remaining branch after earlier conditions fail.
 - Boundary conditions such as `< 0` versus `<= 0`.
 - Function invocation, return values, and console output as distinct concepts.
-- Array typing without falling back to `any`.
 - Explaining decomposition and control flow in precise words.
 - Async execution order; current awareness is intuitive rather than systematic.
 
@@ -449,8 +552,8 @@ Only add a recurring mistake after a pattern appears more than once.
 
 Potential categories to track include:
 
-- TypeScript type confusion;
-- using `any` to avoid understanding a type problem;
+- inconsistent object/data shapes;
+- missing runtime input validation;
 - incorrect async/await usage;
 - forgetting to handle rejected promises;
 - misunderstanding object/reference behavior;
@@ -472,7 +575,7 @@ Potential categories to track include:
 
 Track progress in:
 
-- reading TypeScript compiler errors;
+- reading JavaScript syntax and runtime errors;
 - reading Node.js stack traces;
 - locating runtime errors;
 - inspecting variable values;
@@ -539,8 +642,8 @@ Current independence level:
 
 # Topics to repeat
 
-- Boolean negation and complementary comparisons — required several attempts during Exercise 000; last practiced 2026-08-14; revisit through a different validation exercise during the functions topic.
-- Boundary-value validation — `< 0` versus `<= 0`; last practiced 2026-08-14; revisit with zero and negative business inputs.
+- Boolean negation and complementary comparisons — required several attempts during Exercise 000; last practiced 2026-08-14; revisit through a Feed Reader validation exercise during the functions topic.
+- Boundary-value validation — `< 0` versus `<= 0`; last practiced 2026-08-14; revisit with concrete boundary-value inputs in a Feed Reader exercise.
 
 For each topic record:
 
@@ -559,10 +662,10 @@ For each topic record:
 Variables, primitive values, conditions, loops, functions, arrays, objects/references, basic debugging, decomposition, and basic async awareness.
 
 **Strengths:**
-Understands basic control flow, object-reference behavior, typed function structure, and simple loops. Correctly predicted the introductory promise example as `A`, `C`, `B`, while explicitly noting low confidence.
+Understands basic control flow, object-reference behavior, function structure, and simple loops. Correctly predicted the introductory promise example as `A`, `C`, `B`, while explicitly noting low confidence.
 
 **Weaknesses:**
-Precise boolean reasoning, boundary conditions, distinguishing return values from output, avoiding `any`, and translating requirements without adding extra rules.
+Precise boolean reasoning, boundary conditions, distinguishing return values from output, validating data shapes, and translating requirements without adding extra rules.
 
 **Independence:**
 Required several progressive hints and corrected the work successfully without receiving a full solution.
