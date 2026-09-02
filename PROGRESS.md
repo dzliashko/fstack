@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 009 — Mutable and immutable array addition — completed independently.`
+`Exercise 010 — Indexed access and boundary elements — completed independently.`
 
 ## Recommended next action
 
-Continue Phase 1.5 arrays with indexed access, `length`, searching, and progressively introduced array methods. Reinforce the distinction between mutating an input and returning a new array. Continue spaced repetition of boolean boundaries and explicit variable declarations. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+Continue Phase 1.5 arrays with searching: first compare a manual loop with `find`, then introduce `some` and `every`. Reinforce index boundaries and the distinction between mutation and returning a new value. Continue spaced repetition of boolean boundaries and explicit variable declarations. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -704,6 +704,32 @@ None. Terminology was refined before the exercise: assignment copies a reference
 
 **Needs repetition:**
 Revisit mutation and identity when array methods and objects are introduced.
+
+## Exercise 010 — Indexed access and boundary elements
+
+**Topic:**
+Indexed access, `length`, valid-index boundaries, first/last elements, new arrays, and input preservation.
+
+**Project connection:**
+Inoreader-like Feed Reader access to feeds by position and extraction of collection boundaries.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can validate array indexes, avoid off-by-one errors, access the last element through `length - 1`, and return new boundary arrays for empty, single-item, and multi-item inputs.
+
+**Problems encountered:**
+None in the submitted implementation; all content, identity, and mutation checks passed.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+Revisit indexed access when implementing manual search and when array elements become objects.
 
 For completed exercises, use this format:
 
