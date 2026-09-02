@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 007 — Processable-feed loop with continue/break — completed independently.`
+`Exercise 008 — Accumulating retry delays with a numeric for loop — completed independently.`
 
 ## Recommended next action
 
-Finish the Phase 1.3 reassessment with one focused numeric `for` exercise and a short `while` reasoning check. If passed independently, mark Phase 1.1 and Phase 1.3 complete and continue to Phase 1.5 arrays. Continue spaced repetition of boolean boundaries and explicit variable declarations. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+Finish the Phase 1.3 reassessment with a short `while` reasoning check. If passed independently, mark Phase 1.1 and Phase 1.3 complete and continue to Phase 1.5 arrays. Continue spaced repetition of boolean boundaries and explicit variable declarations. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -625,6 +625,32 @@ None.
 
 **Needs repetition:**
 No immediate repetition required; finish reassessment with numeric `for` and `while` reasoning.
+
+## Exercise 008 — Accumulating retry delays with a numeric for loop
+
+**Topic:**
+Classic `for` loop, loop counter, accumulator, default parameters, early validation, and numeric boundaries.
+
+**Project connection:**
+Inoreader-like Feed Reader retry-delay calculation.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can initialize and advance a numeric loop counter, calculate a per-iteration value, accumulate a total, and reject invalid boundaries before entering the loop.
+
+**Problems encountered:**
+None in the submitted implementation; all required and additional cases passed.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+No immediate repetition required; complete the remaining `while` reasoning check.
 
 For completed exercises, use this format:
 
