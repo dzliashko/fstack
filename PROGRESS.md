@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 009 — While-loop reasoning checkpoint — completed independently.`
+`Exercise 009 — Mutable and immutable array addition — completed independently.`
 
 ## Recommended next action
 
-Start Phase 1.5 arrays with creation, indexed access, length, and controlled mutation using `push`, then compare mutation with returning a new array. Continue spaced repetition of boolean boundaries and explicit variable declarations. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+Continue Phase 1.5 arrays with indexed access, `length`, searching, and progressively introduced array methods. Reinforce the distinction between mutating an input and returning a new array. Continue spaced repetition of boolean boundaries and explicit variable declarations. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -653,7 +653,7 @@ None.
 **Needs repetition:**
 No immediate repetition required; complete the remaining `while` reasoning check.
 
-## Exercise 009 — While-loop reasoning checkpoint
+## Reasoning check — While-loop termination
 
 **Topic:**
 `while` condition checks, dynamic termination, boolean flags, and choosing between `while` and `for`.
@@ -678,6 +678,32 @@ None.
 
 **Needs repetition:**
 No immediate repetition required; revisit `while` later with real asynchronous retry behavior.
+
+## Exercise 009 — Mutable and immutable array addition
+
+**Topic:**
+Array creation, `push`, spread syntax, reference identity, mutation, and returning a new array.
+
+**Project connection:**
+Inoreader-like Feed Reader in-memory feed collections.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can deliberately mutate an input array with `push` and contrast it with constructing a new array through spread syntax while preserving the original.
+
+**Problems encountered:**
+None in the submitted implementation; content, identity, and mutation checks all passed.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None. Terminology was refined before the exercise: assignment copies a reference value rather than using pass-by-reference semantics.
+
+**Needs repetition:**
+Revisit mutation and identity when array methods and objects are introduced.
 
 For completed exercises, use this format:
 
