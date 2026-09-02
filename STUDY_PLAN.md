@@ -291,7 +291,7 @@ Represent simple feed-reader values such as feed URL, feed title, article title,
 
 Status:
 
-`Not started`
+`Completed — reassessed on 2026-09-02 through type/coercion prediction and correct explanations; revisit runtime validation and data shapes in Phase 1.7.`
 
 ---
 
@@ -339,7 +339,7 @@ Practice:
 
 Status:
 
-`Not started`
+`Completed — reassessed independently on 2026-09-02 using for...of, numeric for, counters, accumulators, break/continue, and while-loop reasoning.`
 
 ---
 

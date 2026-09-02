@@ -40,15 +40,15 @@ Study pace:
 
 ## Current topic
 
-`Reassess Phase 1.1 variables/basic types and Phase 1.3 loops before continuing to arrays.`
+`Begin Phase 1.5 — Arrays.`
 
 ## Current exercise
 
-`Exercise 008 — Accumulating retry delays with a numeric for loop — completed independently.`
+`Exercise 009 — While-loop reasoning checkpoint — completed independently.`
 
 ## Recommended next action
 
-Finish the Phase 1.3 reassessment with a short `while` reasoning check. If passed independently, mark Phase 1.1 and Phase 1.3 complete and continue to Phase 1.5 arrays. Continue spaced repetition of boolean boundaries and explicit variable declarations. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+Start Phase 1.5 arrays with creation, indexed access, length, and controlled mutation using `push`, then compare mutation with returning a new array. Continue spaced repetition of boolean boundaries and explicit variable declarations. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -403,15 +403,16 @@ Possible topics:
 # Completed topics
 
 - Phase 0.1 — Initial programming assessment.
+- Phase 1.1 — Variables, values, and basic types.
 - Phase 1.2 — Conditions and boolean logic at a basic level.
+- Phase 1.3 — Loops and iteration.
 - Phase 1.4 — Functions.
 
 ---
 
 # Topics in progress
 
-- Phase 1.1 — Variables, values, and basic types (reassessment pending).
-- Phase 1.3 — Loops and iteration (reassessment pending).
+- Phase 1.5 — Arrays.
 - Precise reasoning about boolean expressions and boundary conditions.
 
 ---
@@ -652,6 +653,32 @@ None.
 **Needs repetition:**
 No immediate repetition required; complete the remaining `while` reasoning check.
 
+## Exercise 009 — While-loop reasoning checkpoint
+
+**Topic:**
+`while` condition checks, dynamic termination, boolean flags, and choosing between `while` and `for`.
+
+**Project connection:**
+Generic connection-attempt control flow relevant to later asynchronous Feed Reader work.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can trace each condition check, explain why the loop stops after a flag changes, and identify when an unknown iteration count makes `while` appropriate.
+
+**Problems encountered:**
+None.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+No immediate repetition required; revisit `while` later with real asynchronous retry behavior.
+
 For completed exercises, use this format:
 
 ## Exercise XXX — Exercise name
@@ -860,4 +887,4 @@ Record only observations useful for future teaching.
 
 # Next milestone
 
-Reassess Phase 1.1 variables/basic types and Phase 1.3 loops with focused exercises. Fill only demonstrated gaps, then continue to Phase 1.5 arrays.
+Complete Phase 1.5 arrays through focused exercises using Feed Reader collections, then continue to objects after an arrays checkpoint.
