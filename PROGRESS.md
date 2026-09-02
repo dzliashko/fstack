@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 004 — Default parameters for feed refresh schedule — completed independently.`
+`Exercise 005 — Arrow functions for feed refresh rules — completed independently.`
 
 ## Recommended next action
 
-Continue Phase 1.4 by introducing arrow functions and comparing them with normal function declarations. Then run a focused functions checkpoint before deciding whether Phase 1.4 is complete. Continue checking boolean negation and boundary conditions in later exercises. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+Run a focused Phase 1.4 functions checkpoint covering parameters/arguments, returns vs output, local scope, early returns, decomposition, pure/impure behavior, default parameters, and arrow-function syntax. If it is passed with sufficient independence, mark Phase 1.4 complete and reassess Phase 1.1/1.3 gaps. Continue checking boolean negation and boundary conditions in later exercises. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -545,6 +545,32 @@ None.
 
 **Needs repetition:**
 No immediate repetition required; revisit defaults when configuration objects are introduced.
+
+## Exercise 005 — Arrow functions for feed refresh rules
+
+**Topic:**
+Arrow functions, block bodies, concise bodies, implicit returns, default parameters, and boolean expressions.
+
+**Project connection:**
+Inoreader-like Feed Reader title normalization, refresh schedule formatting, and refresh eligibility.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can write arrow functions with explicit and implicit returns, use required parentheses for multiple/defaulted parameters, and express a small boolean rule concisely.
+
+**Problems encountered:**
+None in the submitted implementation.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+No immediate repetition required; compare declaration/initialization behavior with normal function declarations during the checkpoint.
 
 For completed exercises, use this format:
 
