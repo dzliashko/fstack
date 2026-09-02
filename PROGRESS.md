@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 012 — Boolean array queries with some/every — completed independently.`
+`Exercise 013 — Transforming and filtering feed statuses with map/filter — started, incomplete draft saved.`
 
 ## Recommended next action
 
-Continue Phase 1.5 arrays with `map` and `filter`, first establishing the distinction between transforming every element and selecting a subset. Reinforce callback predicates, empty-array behavior, non-mutation, and when one traversal is sufficient. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+Resume the incomplete draft of Exercise 013 in `exercises/arrays/task13.js`. First predict the results of the four provided calls, then revise `markRefreshable(statuses)` to use `map` and complete `getRefreshableStatuses(statuses)` with `filter`. Both functions must treat `'ready'` and `'retry'` as refreshable, preserve the input array, handle an empty array, avoid loops, and check both alternatives in one callback. Review and test the student's implementation before continuing. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
