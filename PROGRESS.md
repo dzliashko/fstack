@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 002 — Feed title normalization and refresh status — completed after one hint about local variable declaration.`
+`Exercise 003 — Pure and impure unread-count functions — completed independently.`
 
 ## Recommended next action
 
-Continue Phase 1.4 functions with pure vs impure behavior, then cover default parameters and introduce arrow functions only after normal function declarations are secure. Continue checking boolean negation and boundary conditions in later exercises. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+Continue Phase 1.4 functions with default parameters, then introduce arrow functions after normal function declarations are secure. Continue checking boolean negation and boundary conditions in later exercises. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -493,6 +493,32 @@ Local intermediate values must be declared explicitly with `const` or `let`; als
 
 **Needs repetition:**
 Yes — reinforce explicit declarations and scope in later exercises.
+
+## Exercise 003 — Pure and impure unread-count functions
+
+**Topic:**
+Pure functions, impure functions, side effects, return values, and boundary conditions.
+
+**Project connection:**
+Inoreader-like Feed Reader unread-count calculation and display formatting.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can distinguish calculation/formatting functions without side effects from a display function whose console output is an intentional side effect.
+
+**Problems encountered:**
+None in the submitted implementation.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+No immediate repetition required; revisit purity when arrays and objects introduce mutation.
 
 For completed exercises, use this format:
 
