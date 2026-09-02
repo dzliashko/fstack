@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 011 — Manual search compared with Array.find — completed independently.`
+`Exercise 012 — Boolean array queries with some/every — completed independently.`
 
 ## Recommended next action
 
-Continue Phase 1.5 arrays with boolean collection questions using `some` and `every`, including their behavior on empty arrays. Reinforce short-circuiting, boolean boundaries, and the distinction between searching for an element and asking whether a condition holds. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+Continue Phase 1.5 arrays with `map` and `filter`, first establishing the distinction between transforming every element and selecting a subset. Reinforce callback predicates, empty-array behavior, non-mutation, and when one traversal is sufficient. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -756,6 +756,32 @@ None.
 
 **Needs repetition:**
 Revisit `find` when array elements become objects and predicate conditions use object properties.
+
+## Exercise 012 — Boolean array queries with some/every
+
+**Topic:**
+`Array.some`, `Array.every`, predicate callbacks, short-circuiting, empty-array semantics, and business-rule boundaries.
+
+**Project connection:**
+Inoreader-like Feed Reader blocked-status detection and bulk-refresh eligibility.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can distinguish “at least one” from “all,” explain `some`/`every` short-circuiting, preserve vacuous truth for `every([])`, and add a non-empty business constraint separately.
+
+**Problems encountered:**
+None affecting correctness; `hasBlockedFeed` used two `some` traversals where one combined predicate could be simpler and avoid a possible second pass.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+Practice combining related alternatives inside one predicate when it keeps the condition readable.
 
 For completed exercises, use this format:
 
