@@ -40,15 +40,15 @@ Study pace:
 
 ## Current topic
 
-`Begin Phase 1.4 — Functions, while continuing to reinforce precise boolean reasoning and JavaScript fundamentals.`
+`Reassess Phase 1.1 variables/basic types and Phase 1.3 loops before continuing to arrays.`
 
 ## Current exercise
 
-`Exercise 005 — Arrow functions for feed refresh rules — completed independently.`
+`Exercise 006 — Phase 1.4 functions checkpoint — completed independently.`
 
 ## Recommended next action
 
-Run a focused Phase 1.4 functions checkpoint covering parameters/arguments, returns vs output, local scope, early returns, decomposition, pure/impure behavior, default parameters, and arrow-function syntax. If it is passed with sufficient independence, mark Phase 1.4 complete and reassess Phase 1.1/1.3 gaps. Continue checking boolean negation and boundary conditions in later exercises. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+Run a focused reassessment of Phase 1.1 variables/basic types and Phase 1.3 loops. Fill only demonstrated gaps, then continue to Phase 1.5 arrays. Continue spaced repetition of boolean boundaries and explicit variable declarations. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -404,12 +404,14 @@ Possible topics:
 
 - Phase 0.1 — Initial programming assessment.
 - Phase 1.2 — Conditions and boolean logic at a basic level.
+- Phase 1.4 — Functions.
 
 ---
 
 # Topics in progress
 
-- Phase 1.4 — Functions.
+- Phase 1.1 — Variables, values, and basic types (reassessment pending).
+- Phase 1.3 — Loops and iteration (reassessment pending).
 - Precise reasoning about boolean expressions and boundary conditions.
 
 ---
@@ -572,6 +574,32 @@ None.
 **Needs repetition:**
 No immediate repetition required; compare declaration/initialization behavior with normal function declarations during the checkpoint.
 
+## Exercise 006 — Phase 1.4 functions checkpoint
+
+**Topic:**
+Parameters/arguments, return values, local scope, early returns, decomposition, pure/impure behavior, default parameters, arrow functions, and declaration behavior.
+
+**Project connection:**
+Inoreader-like Feed Reader refresh decision and retry-limit rules.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can combine normal and arrow functions, explicit and implicit returns, defaults, local variables, helper functions, ordered decision branches, and one intentional output side effect.
+
+**Problems encountered:**
+None in the submitted implementation; all required and additional boundary cases passed.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+No immediate repetition required; revisit purity and scope when mutable arrays and objects are introduced.
+
 For completed exercises, use this format:
 
 ## Exercise XXX — Exercise name
@@ -608,6 +636,9 @@ Yes / No
 - Object variables can reference the same object.
 - Basic `if`/`else`, comparisons, `&&`, `||`, and early-return control flow.
 - Simple functions returning numbers, strings, or booleans.
+- Parameters versus arguments, defaults, local scope, early returns, and decomposition.
+- Pure versus impure functions and intentional console-output side effects.
+- Normal function declarations and arrow functions with block or concise bodies.
 - Basic `for...of` loop with an accumulator.
 
 ---
@@ -616,7 +647,6 @@ Yes / No
 
 - Precise boolean negation and describing the remaining branch after earlier conditions fail.
 - Boundary conditions such as `< 0` versus `<= 0`.
-- Function invocation, return values, and console output as distinct concepts.
 - Explaining decomposition and control flow in precise words.
 - Async execution order; current awareness is intuitive rather than systematic.
 
@@ -778,4 +808,4 @@ Record only observations useful for future teaching.
 
 # Next milestone
 
-Complete Phase 1.4 functions with an independently implemented exercise that demonstrates parameters, returns, local scope, early returns, and decomposition. Then reassess whether Phase 1.1 and Phase 1.3 need focused reinforcement before continuing to arrays and objects.
+Reassess Phase 1.1 variables/basic types and Phase 1.3 loops with focused exercises. Fill only demonstrated gaps, then continue to Phase 1.5 arrays.

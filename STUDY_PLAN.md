@@ -369,7 +369,7 @@ Do not turn these examples into a full application yet.
 
 Status:
 
-`Not started`
+`Completed — checkpoint passed independently on 2026-09-02; continue revisiting scope, purity, and boundaries when mutable arrays/objects are introduced.`
 
 ---
 
