@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 010 — Indexed access and boundary elements — completed independently.`
+`Exercise 011 — Manual search compared with Array.find — completed independently.`
 
 ## Recommended next action
 
-Continue Phase 1.5 arrays with searching: first compare a manual loop with `find`, then introduce `some` and `every`. Reinforce index boundaries and the distinction between mutation and returning a new value. Continue spaced repetition of boolean boundaries and explicit variable declarations. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+Continue Phase 1.5 arrays with boolean collection questions using `some` and `every`, including their behavior on empty arrays. Reinforce short-circuiting, boolean boundaries, and the distinction between searching for an element and asking whether a condition holds. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -730,6 +730,32 @@ None.
 
 **Needs repetition:**
 Revisit indexed access when implementing manual search and when array elements become objects.
+
+## Exercise 011 — Manual search compared with Array.find
+
+**Topic:**
+Sequential search, `for...of`, early return, `Array.find`, predicate callbacks, first-match behavior, and missing values.
+
+**Project connection:**
+Inoreader-like Feed Reader lookup of feed titles in an in-memory collection.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can implement the same case-sensitive first-match search manually and with `find`, including empty arrays and `undefined` when no element matches.
+
+**Problems encountered:**
+None in the submitted implementation; both versions matched on all cases and preserved their inputs.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+Revisit `find` when array elements become objects and predicate conditions use object properties.
 
 For completed exercises, use this format:
 
