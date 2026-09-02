@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 003 — Pure and impure unread-count functions — completed independently.`
+`Exercise 004 — Default parameters for feed refresh schedule — completed independently.`
 
 ## Recommended next action
 
-Continue Phase 1.4 functions with default parameters, then introduce arrow functions after normal function declarations are secure. Continue checking boolean negation and boundary conditions in later exercises. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+Continue Phase 1.4 by introducing arrow functions and comparing them with normal function declarations. Then run a focused functions checkpoint before deciding whether Phase 1.4 is complete. Continue checking boolean negation and boundary conditions in later exercises. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -519,6 +519,32 @@ None.
 
 **Needs repetition:**
 No immediate repetition required; revisit purity when arrays and objects introduce mutation.
+
+## Exercise 004 — Default parameters for feed refresh schedule
+
+**Topic:**
+Default parameters, `undefined` versus explicit falsy values, return values, and function composition.
+
+**Project connection:**
+Inoreader-like Feed Reader refresh-schedule formatting.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Default parameter values apply when an argument is omitted or is `undefined`, while an explicit `0` remains unchanged.
+
+**Problems encountered:**
+None in the submitted implementation.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+No immediate repetition required; revisit defaults when configuration objects are introduced.
 
 For completed exercises, use this format:
 
