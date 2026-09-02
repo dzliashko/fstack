@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 006 — Phase 1.4 functions checkpoint — completed independently.`
+`Exercise 007 — Processable-feed loop with continue/break — completed independently.`
 
 ## Recommended next action
 
-Run a focused reassessment of Phase 1.1 variables/basic types and Phase 1.3 loops. Fill only demonstrated gaps, then continue to Phase 1.5 arrays. Continue spaced repetition of boolean boundaries and explicit variable declarations. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+Finish the Phase 1.3 reassessment with one focused numeric `for` exercise and a short `while` reasoning check. If passed independently, mark Phase 1.1 and Phase 1.3 complete and continue to Phase 1.5 arrays. Continue spaced repetition of boolean boundaries and explicit variable declarations. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -599,6 +599,32 @@ None.
 
 **Needs repetition:**
 No immediate repetition required; revisit purity and scope when mutable arrays and objects are introduced.
+
+## Exercise 007 — Processable-feed loop with continue/break
+
+**Topic:**
+`for...of`, counters, `continue`, `break`, empty input, and pure functions.
+
+**Project connection:**
+Inoreader-like Feed Reader sequential status processing.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can iterate through an array, skip selected values, stop processing at a sentinel status, count processed items, and leave the input unchanged.
+
+**Problems encountered:**
+None in the submitted implementation; all required and additional cases passed.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+No immediate repetition required; finish reassessment with numeric `for` and `while` reasoning.
 
 For completed exercises, use this format:
 
