@@ -40,15 +40,15 @@ Study pace:
 
 ## Current topic
 
-`Phase 1.5 — Arrays completed; ready to begin Phase 1.6 — Objects.`
+`Phase 1.6 — Objects in progress.`
 
 ## Current exercise
 
-`Exercise 019 — Independent array-method selection checkpoint — completed with a small hint.`
+`Exercise 020 — Object creation, dynamic property access, and intentional mutation — completed independently.`
 
 ## Recommended next action
 
-After confirming that the student wants to continue, begin Phase 1.6 objects with focused practice in object literals, property access, nested data, reference behavior, and destructuring. Revisit strict boolean checks and selecting `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+After confirming that the student wants to continue, proceed in Phase 1.6 with copying objects and comparing mutation with immutable updates before introducing nested data and destructuring. Revisit strict boolean checks and selecting `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -964,6 +964,32 @@ Choose `find` when the contract requires one first matching element; `filter` al
 
 **Needs repetition:**
 Revisit `find` versus `filter` when working with collections of nested objects.
+
+## Exercise 020 — Object creation, dynamic access, and intentional mutation
+
+**Topic:**
+Object literals, property shorthand, dot and computed bracket access, object identity, and intentional mutation.
+
+**Project connection:**
+Creating feed records, reading a property selected at runtime, and changing a feed status.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can create a fresh object per function call, access a dynamically named property, intentionally mutate a passed object, return the same object, and explain strict equality in terms of shared object identity.
+
+**Problems encountered:**
+None; shape, missing-property, mutation, identity, and independent-object checks passed.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+Refine the reference/identity mental model while comparing shallow copies with mutations and later working with nested objects.
 
 For completed exercises, use this format:
 
