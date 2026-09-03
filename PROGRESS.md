@@ -40,15 +40,15 @@ Study pace:
 
 ## Current topic
 
-`Begin Phase 1.5 — Arrays.`
+`Phase 1.5 — Arrays completed; ready to begin Phase 1.6 — Objects.`
 
 ## Current exercise
 
-`Exercise 018 — Composite object accumulator with reduce — completed independently.`
+`Exercise 019 — Independent array-method selection checkpoint — completed with a small hint.`
 
 ## Recommended next action
 
-Continue Phase 1.5 arrays only after confirming that the student wants the next exercise. Assess independent selection among `find`, `some`, `every`, `map`, `filter`, and `reduce`, while reinforcing mutation/reference behavior and empty-array semantics. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+After confirming that the student wants to continue, begin Phase 1.6 objects with focused practice in object literals, property access, nested data, reference behavior, and destructuring. Revisit strict boolean checks and selecting `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -938,6 +938,32 @@ None.
 
 **Needs repetition:**
 Choose the appropriate array method independently rather than using `reduce` when a simpler method communicates the intent better.
+
+## Exercise 019 — Independent array-method selection checkpoint
+
+**Topic:**
+Independent selection among `find`, `some`, `every`, `filter`, and `map`; return shapes, short-circuiting, method chaining, strict state checks, and empty-array semantics.
+
+**Project connection:**
+Feed lookup, blocked-feed detection, unread-title projection, and bulk-refresh eligibility.
+
+**Result:**
+Completed with a small hint.
+
+**What I understood:**
+Can explain method choice by required result shape and quantifier, explain why `filter().map()` performs selection before transformation, and handle the business boundary that overrides `every([]) === true`.
+
+**Problems encountered:**
+Initially used `filter` for a function requiring the first matching object or `undefined`, producing an array instead.
+
+**Hints required:**
+Small.
+
+**Important mistake:**
+Choose `find` when the contract requires one first matching element; `filter` always returns an array of all matches.
+
+**Needs repetition:**
+Revisit `find` versus `filter` when working with collections of nested objects.
 
 For completed exercises, use this format:
 

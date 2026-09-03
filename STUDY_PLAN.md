@@ -396,7 +396,7 @@ Work with collections of feeds, subscriptions, articles, and user article states
 
 Status:
 
-`Not started`
+`Completed independently on 2026-09-03 — array creation/access/mutation, iteration, search, find/some/every, map/filter/reduce, empty-array behavior, reference identity, and method selection were practiced and checked. Revisit find versus filter and strict runtime-state checks through spaced repetition.`
 
 ---
 
