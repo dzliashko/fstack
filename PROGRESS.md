@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 017 — Conditional summation with reduce — completed independently.`
+`Exercise 018 — Composite object accumulator with reduce — completed independently.`
 
 ## Recommended next action
 
-Continue Phase 1.5 arrays after confirming that the student wants the next exercise. Reinforce `reduce` with progressively varied accumulator shapes, then assess the combined use of array methods, mutation/reference behavior, and empty-array semantics. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+Continue Phase 1.5 arrays only after confirming that the student wants the next exercise. Assess independent selection among `find`, `some`, `every`, `map`, `filter`, and `reduce`, while reinforcing mutation/reference behavior and empty-array semantics. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -912,6 +912,32 @@ None.
 
 **Needs repetition:**
 Combine array-method selection with an independently reasoned choice of accumulator shape.
+
+## Exercise 018 — Composite object accumulator with reduce
+
+**Topic:**
+An object accumulator containing both an array and a numeric counter, conditional categorization, and nested reference independence.
+
+**Project connection:**
+Summarizing refreshable feed titles and the number of blocked feeds in one traversal.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can select a compound accumulator shape, update its nested array and counter, return it on every iteration, ignore unrelated statuses, and explain why separate calls receive separate accumulator objects and nested arrays.
+
+**Problems encountered:**
+None; mixed, empty, ignored-status, individual status-group, non-mutation, and reference-independence checks passed.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+Choose the appropriate array method independently rather than using `reduce` when a simpler method communicates the intent better.
 
 For completed exercises, use this format:
 
