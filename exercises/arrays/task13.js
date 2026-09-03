@@ -1,12 +1,9 @@
-function markRefreshable(statuses) {
-  const result = [];
-  for (const status of statuses) {
-    if (status === 'ready' || status === 'retry') result.push(true);
-  }
-  result.push(false);
-  return result;
+function getFeedTitles(feeds) {
+  const titles = feeds.map((feed) => feed.title);
+  return titles;
 }
 
-function getRefreshableStatuses(statuses){
-  
+function getReadyFeeds(feeds) {
+  const readyFeeds = feeds.filter((feed) => feed.status === 'ready');
+  return readyFeeds;
 }

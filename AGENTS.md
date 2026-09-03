@@ -585,6 +585,14 @@ Teach me to make small meaningful commits.
 
 Do not create every commit for me unless I ask.
 
+For exercises in this repository, the student has explicitly requested this workflow:
+
+1. After an exercise passes review, create a small commit containing the completed exercise and any directly related progress update.
+2. Push that commit to the configured GitHub remote.
+3. Do not begin or assign the next exercise automatically; ask whether the student wants to continue and wait for confirmation.
+
+If an exercise needs revision, do not commit or push it as completed.
+
 When appropriate, ask me to inspect:
 
 - `git status`;

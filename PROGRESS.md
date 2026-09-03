@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 013 — Transforming and filtering feed statuses with map/filter — started, incomplete draft saved.`
+`Exercise 017 — Conditional summation with reduce — completed independently.`
 
 ## Recommended next action
 
-Resume the incomplete draft of Exercise 013 in `exercises/arrays/task13.js`. First predict the results of the four provided calls, then revise `markRefreshable(statuses)` to use `map` and complete `getRefreshableStatuses(statuses)` with `filter`. Both functions must treat `'ready'` and `'retry'` as refreshable, preserve the input array, handle an empty array, avoid loops, and check both alternatives in one callback. Review and test the student's implementation before continuing. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+Continue Phase 1.5 arrays after confirming that the student wants the next exercise. Reinforce `reduce` with progressively varied accumulator shapes, then assess the combined use of array methods, mutation/reference behavior, and empty-array semantics. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -782,6 +782,136 @@ None.
 
 **Needs repetition:**
 Practice combining related alternatives inside one predicate when it keeps the condition readable.
+
+## Exercise 013 — Transforming and filtering feed arrays
+
+**Topic:**
+`Array.map`, `Array.filter`, callbacks, new arrays, and preserving input arrays.
+
+**Project connection:**
+Extracting feed titles and selecting ready feeds in the Inoreader-like Feed Reader.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can distinguish transforming every element with `map` from selecting a subset with `filter`, including their behavior on empty arrays.
+
+**Problems encountered:**
+None.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+Revisit shallow copying and shared object references inside new arrays.
+
+## Exercise 014 — Chaining filter and map
+
+**Topic:**
+Method chaining, intermediate arrays, callback invocation counts, and operation order.
+
+**Project connection:**
+Selecting ready feeds and returning their titles.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can filter a collection before transforming the selected elements and explain why the two callbacks run different numbers of times.
+
+**Problems encountered:**
+None.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+Revisit traversal costs only when they matter; prefer clear method chains for ordinary collections.
+
+## Exercise 015 — Counting unread articles with reduce
+
+**Topic:**
+`Array.reduce`, numeric accumulators, explicit initial values, and strict boolean state checks.
+
+**Project connection:**
+Counting unread articles in the Feed Reader.
+
+**Result:**
+Completed with a small hint.
+
+**What I understood:**
+Can trace and return a numeric accumulator and explain why an empty array returns the explicit initial value.
+
+**Problems encountered:**
+Initially used a truthiness check that treated missing and other falsy values as explicit `false`.
+
+**Hints required:**
+Small.
+
+**Important mistake:**
+Business rules requiring an explicit boolean should use a strict comparison rather than general truthiness.
+
+**Needs repetition:**
+Reinforce strict boolean-state checks when runtime data may be incomplete or malformed.
+
+## Exercise 016 — Object accumulator with reduce
+
+**Topic:**
+Object accumulators, accumulator mutation, reference identity, and categorizing explicit boolean states.
+
+**Project connection:**
+Summarizing read and unread article counts.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can use and return an object accumulator, ignore invalid states, preserve source objects, and explain why each function call creates a distinct accumulator object.
+
+**Problems encountered:**
+None.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+Revisit the distinction between mutating a locally created accumulator and mutating input data.
+
+## Exercise 017 — Conditional summation with reduce
+
+**Topic:**
+Numeric accumulation with a condition and summing object properties.
+
+**Project connection:**
+Calculating total reading time for unread articles.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can use `reduce` to sum a property only for elements satisfying an explicit business condition.
+
+**Problems encountered:**
+None; normal, empty, all-read, all-unread, zero-value, and non-mutation checks passed.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+Combine array-method selection with an independently reasoned choice of accumulator shape.
 
 For completed exercises, use this format:
 
