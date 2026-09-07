@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 022 — Nested immutable object update — completed independently.`
+`Exercise 023 — Basic object destructuring — completed independently.`
 
 ## Recommended next action
 
-After confirming that the student wants to continue, introduce object destructuring with focused read-only examples before combining it with parameters and nested data. Revisit shallow-copy boundaries, strict boolean checks, and selecting `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+After confirming that the student wants to continue, extend object destructuring with renamed variables and default values before using destructured function parameters and nested destructuring. Revisit shallow-copy boundaries, strict boolean checks, and selecting `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -1042,6 +1042,32 @@ None.
 
 **Needs repetition:**
 Revisit shallow copying when structures gain another nesting level or contain arrays of objects.
+
+## Exercise 023 — Basic object destructuring
+
+**Topic:**
+Extracting object properties into variables, missing-property behavior, nested reference identity, and read-only versus mutation behavior.
+
+**Project connection:**
+Formatting a feed label and exposing a feed's settings object.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can destructure selected properties, use them without repeated property access, explain why a destructured nested object retains its identity, and distinguish a non-mutating getter from later caller mutation through the returned reference.
+
+**Problems encountered:**
+None; formatting, alternate-value, missing-property, source-preservation, destructuring-syntax, and identity checks passed.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+Revisit API boundaries that expose mutable nested references when later learning encapsulation and module design.
 
 For completed exercises, use this format:
 
