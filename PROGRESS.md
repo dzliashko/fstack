@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 024 — Destructuring with renaming and defaults — completed independently.`
+`Exercise 025 — Destructured function parameter — completed independently.`
 
 ## Recommended next action
 
-After confirming that the student wants to continue, introduce destructured function parameters, then nested destructuring with careful handling of missing outer properties. Revisit shallow-copy boundaries, strict boolean checks, and selecting `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+After confirming that the student wants to continue, distinguish property defaults from a default for the whole destructured parameter, then introduce nested destructuring with careful handling of missing outer properties. Revisit shallow-copy boundaries, strict boolean checks, and selecting `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -1094,6 +1094,32 @@ None.
 
 **Needs repetition:**
 Apply defaults carefully to nested destructuring, where the outer object itself may be missing.
+
+## Exercise 025 — Destructured function parameter
+
+**Topic:**
+Destructuring in a function parameter, property renaming and defaults, explicit falsy values, and parameter-binding errors for missing arguments.
+
+**Project connection:**
+Formatting an article from only the fields required by the function.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can destructure and rename properties directly in a parameter, preserve explicit `null`, empty-string, and zero values, and explain that calling the function without an argument throws during parameter initialization before the body executes.
+
+**Problems encountered:**
+None; normal, missing-property, explicit-undefined, falsy-value, source-preservation, and syntax checks passed.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+Distinguish defaults for individual properties from a default object for the entire function parameter.
 
 For completed exercises, use this format:
 
