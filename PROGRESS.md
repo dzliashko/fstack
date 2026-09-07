@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 021 — Immutable object update with spread — completed independently.`
+`Exercise 022 — Nested immutable object update — completed independently.`
 
 ## Recommended next action
 
-After confirming that the student wants to continue, proceed in Phase 1.6 with nested objects and the shallow-copy boundary before introducing destructuring. Revisit strict boolean checks and selecting `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+After confirming that the student wants to continue, introduce object destructuring with focused read-only examples before combining it with parameters and nested data. Revisit shallow-copy boundaries, strict boolean checks, and selecting `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -1016,6 +1016,32 @@ None.
 
 **Needs repetition:**
 Apply the shallow-copy model to nested objects, where copying the outer object does not copy nested references.
+
+## Exercise 022 — Nested immutable object update
+
+**Topic:**
+Nested objects, shallow-copy boundaries, copying each changed level, structural sharing, and reference identity for changed versus unchanged branches.
+
+**Project connection:**
+Updating feed refresh settings without mutating the feed record or its original settings.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can immutably update a nested property by copying the root and changed nested branch, preserve unknown properties at both levels, and explain why unchanged nested branches may safely retain their original references.
+
+**Problems encountered:**
+None; nested values, unknown properties, source preservation, reference identity, and repeated-call independence checks passed.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+Revisit shallow copying when structures gain another nesting level or contain arrays of objects.
 
 For completed exercises, use this format:
 
