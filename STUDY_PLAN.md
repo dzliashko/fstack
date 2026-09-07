@@ -423,7 +423,7 @@ Represent:
 
 Status:
 
-`Not started`
+`In progress — started on 2026-09-03. Object literals, property shorthand, dot/computed access, mutation, identity, object spread, property overwrite order, and immutable outer-object updates have been practiced. Nested objects, destructuring, and optional properties remain.`
 
 ---
 

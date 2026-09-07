@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 020 — Object creation, dynamic property access, and intentional mutation — completed independently.`
+`Exercise 021 — Immutable object update with spread — completed independently.`
 
 ## Recommended next action
 
-After confirming that the student wants to continue, proceed in Phase 1.6 with copying objects and comparing mutation with immutable updates before introducing nested data and destructuring. Revisit strict boolean checks and selecting `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+After confirming that the student wants to continue, proceed in Phase 1.6 with nested objects and the shallow-copy boundary before introducing destructuring. Revisit strict boolean checks and selecting `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -990,6 +990,32 @@ None.
 
 **Needs repetition:**
 Refine the reference/identity mental model while comparing shallow copies with mutations and later working with nested objects.
+
+## Exercise 021 — Immutable object update with spread
+
+**Topic:**
+Object spread, shallow copying, property overwrite order, preserving unknown properties, and immutable updates.
+
+**Project connection:**
+Changing a feed status while retaining the original feed record and all additional properties.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can return a new object with all source properties, override one property without mutating the input, preserve extra properties, and explain why the last occurrence of a duplicate key wins.
+
+**Problems encountered:**
+None; shape, identity, source-preservation, extra-property, and repeated-call checks passed.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+Apply the shallow-copy model to nested objects, where copying the outer object does not copy nested references.
 
 For completed exercises, use this format:
 
