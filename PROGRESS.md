@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 023 — Basic object destructuring — completed independently.`
+`Exercise 024 — Destructuring with renaming and defaults — completed independently.`
 
 ## Recommended next action
 
-After confirming that the student wants to continue, extend object destructuring with renamed variables and default values before using destructured function parameters and nested destructuring. Revisit shallow-copy boundaries, strict boolean checks, and selecting `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+After confirming that the student wants to continue, introduce destructured function parameters, then nested destructuring with careful handling of missing outer properties. Revisit shallow-copy boundaries, strict boolean checks, and selecting `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -1068,6 +1068,32 @@ None.
 
 **Needs repetition:**
 Revisit API boundaries that expose mutable nested references when later learning encapsulation and module design.
+
+## Exercise 024 — Destructuring with renaming and defaults
+
+**Topic:**
+Renaming destructured variables, default values, `undefined` versus other falsy values, and local binding names.
+
+**Project connection:**
+Formatting subscription information whose folder and unread count may be omitted.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can rename a property during destructuring, supply defaults for missing or `undefined` properties, preserve explicit `null`, empty-string, and zero values, and explain that the property name before the colon does not create a local binding.
+
+**Problems encountered:**
+None; full, missing, explicit-undefined, falsy-value, null, source-preservation, and syntax checks passed.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+Apply defaults carefully to nested destructuring, where the outer object itself may be missing.
 
 For completed exercises, use this format:
 
