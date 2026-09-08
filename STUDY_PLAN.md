@@ -423,7 +423,7 @@ Represent:
 
 Status:
 
-`In progress — started on 2026-09-03. Object literals, property shorthand, dot/computed access, mutation, identity, object spread, property overwrite order, and immutable outer-object updates have been practiced. Nested objects, destructuring, and optional properties remain.`
+`Completed on 2026-09-08 — object literals and properties, identity and mutation, shallow copying and nested immutable updates, destructuring/defaults at multiple levels, optional properties, optional chaining/nullish coalescing, and arrays of nested objects were practiced and checked. Continue revisiting exact operator choice and reference behavior during runtime validation and domain modeling.`
 
 ---
 

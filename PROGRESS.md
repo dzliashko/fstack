@@ -40,15 +40,15 @@ Study pace:
 
 ## Current topic
 
-`Phase 1.6 — Objects in progress.`
+`Phase 1.6 — Objects completed; ready to begin Phase 1.7 — JavaScript data modeling and runtime validation.`
 
 ## Current exercise
 
-`Exercise 028 — Optional chaining and nullish defaults — completed independently.`
+`Exercise 029 — Objects and arrays immutable-update checkpoint — completed with a small clarification.`
 
 ## Recommended next action
 
-After confirming that the student wants to continue, use a small Phase 1.6 object checkpoint combining nested reads, immutable updates, destructuring, optional properties, and arrays of objects. If it passes, move to Phase 1.7 runtime data modeling and validation. Revisit `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+After confirming that the student wants to continue, begin Phase 1.7 with consistent object shapes and the distinction between trusted internal data and unknown runtime input. Introduce small explicit validation functions before finite status sets. Revisit `find` versus `filter`, exact output formats, and `??` versus `||` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -1198,6 +1198,32 @@ None.
 
 **Needs repetition:**
 Apply safe nested access within array callbacks and distinguish it from validation of malformed data.
+
+## Exercise 029 — Objects and arrays immutable-update checkpoint
+
+**Topic:**
+Arrays of nested objects, safe optional reads, strict state checks, immutable updates at each changed level, structural sharing, and nullish fallback behavior.
+
+**Project connection:**
+Selecting unread article titles and starring a selected Feed Reader article without mutating stored state.
+
+**Result:**
+Completed with a small clarification.
+
+**What I understood:**
+Can combine array methods with nested object operations, create a new collection and new objects only along the changed branch, retain references to unchanged articles, safely create a missing/null state object, and explain why structural sharing preserves immutability.
+
+**Problems encountered:**
+Implementation passed all normal, boundary, missing-state, null-state, identity, property-preservation, and non-mutation checks. The first explanation accidentally referred to `||` instead of the implemented `??`; the semantic distinction was then explained correctly.
+
+**Hints required:**
+Small clarification after the completed implementation.
+
+**Important mistake:**
+Keep descriptions synchronized with the exact operator used; `??` falls back only for `null`/`undefined`, whereas `||` falls back for every falsy value.
+
+**Needs repetition:**
+Revisit `??` versus `||` when validating or normalizing malformed runtime data.
 
 For completed exercises, use this format:
 
