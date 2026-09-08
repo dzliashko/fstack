@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 027 — Nested destructured function parameter — completed independently.`
+`Exercise 028 — Optional chaining and nullish defaults — completed independently.`
 
 ## Recommended next action
 
-After confirming that the student wants to continue, introduce optional properties and safe nested access, including the distinction between optional chaining and defaulting. Then use a small object-phase checkpoint before moving to runtime data validation. Revisit `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+After confirming that the student wants to continue, use a small Phase 1.6 object checkpoint combining nested reads, immutable updates, destructuring, optional properties, and arrays of objects. If it passes, move to Phase 1.7 runtime data modeling and validation. Revisit `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -1172,6 +1172,32 @@ None.
 
 **Needs repetition:**
 Compare nested destructuring defaults with optional chaining when nested values may be `null` as well as missing.
+
+## Exercise 028 — Optional chaining and nullish defaults
+
+**Topic:**
+Optional chaining at multiple levels, nullish coalescing, optional properties, and preserving non-nullish falsy values.
+
+**Project connection:**
+Reading display preferences safely from an optional feed and optional nested settings.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can place `?.` at every potentially nullish transition, use `??` for defaults without replacing `0`, `false`, or an empty string, and explain why an exception that occurs before `??` cannot be recovered by its fallback.
+
+**Problems encountered:**
+None; full, missing, nullish-level, explicit-falsy, null-value, and source-preservation checks passed.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+Apply safe nested access within array callbacks and distinguish it from validation of malformed data.
 
 For completed exercises, use this format:
 
