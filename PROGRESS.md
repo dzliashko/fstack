@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 030 — Runtime validation of a Feed shape — completed independently.`
+`Exercise 031 — Validation against a finite status set — completed with a conceptual explanation.`
 
 ## Recommended next action
 
-After confirming that the student wants to continue, introduce finite allowed status values and compose their validator with the existing Feed shape checks. Reinforce the difference between validating unknown data and normalizing or mutating it. Revisit `find` versus `filter`, exact output formats, and `??` versus `||` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+After confirming that the student wants to continue, compose the finite status validator with the existing Feed shape validator, keeping validation separate from normalization or mutation. Reinforce empty-collection semantics and the difference between structural validity and business-operation eligibility. Revisit `find` versus `filter`, exact output formats, and `??` versus `||` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -1250,6 +1250,32 @@ None.
 
 **Needs repetition:**
 Apply the same guard ordering to deeper shapes and keep validation separate from cleanup or normalization.
+
+## Exercise 031 — Validation against a finite status set
+
+**Topic:**
+Finite allowed values, exact membership checks with `includes`, validator composition over arrays, early exit, boolean contracts, and empty-array semantics.
+
+**Project connection:**
+Restricting Feed refresh states to the supported lifecycle values.
+
+**Result:**
+Completed with a conceptual explanation.
+
+**What I understood:**
+Can centralize allowed statuses, validate exact values without normalization, reject non-array collections, compose an element validator over a list, and implement early failure without mutating input.
+
+**Problems encountered:**
+The implementation passed all membership, type, list, empty, boolean-result, and non-mutation checks. The distinction between an empty list being structurally valid and being insufficient for a bulk refresh operation required explanation.
+
+**Hints required:**
+Conceptual explanation after the correct implementation.
+
+**Important mistake:**
+Empty-collection behavior comes from the function's contract: absence of invalid elements can be valid, while an operation may separately require at least one element.
+
+**Needs repetition:**
+Revisit vacuous truth and explicit non-empty business constraints in later collection validators and bulk operations.
 
 For completed exercises, use this format:
 
