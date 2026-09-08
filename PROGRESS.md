@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 025 — Destructured function parameter — completed independently.`
+`Exercise 026 — Default object for a destructured parameter — completed independently.`
 
 ## Recommended next action
 
-After confirming that the student wants to continue, distinguish property defaults from a default for the whole destructured parameter, then introduce nested destructuring with careful handling of missing outer properties. Revisit shallow-copy boundaries, strict boolean checks, and selecting `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+After confirming that the student wants to continue, introduce nested destructuring and carefully distinguish a missing nested object from missing properties inside an existing nested object. Revisit shallow-copy boundaries, strict boolean checks, and selecting `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -1120,6 +1120,32 @@ None.
 
 **Needs repetition:**
 Distinguish defaults for individual properties from a default object for the entire function parameter.
+
+## Exercise 026 — Default object for a destructured parameter
+
+**Topic:**
+Defaults for the whole destructured parameter versus defaults for individual properties, omitted arguments, explicit `undefined`, and `null` boundaries.
+
+**Project connection:**
+Formatting a feed status even when the caller omits the feed argument or individual display properties.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can apply an empty-object default to a destructured parameter, combine it with property defaults, and explain why explicit objects bypass the parameter default while `undefined` properties still receive their own defaults.
+
+**Problems encountered:**
+Implementation passed all checks. A follow-up prediction used the wrong display separator, but its explanation of both default levels and `null` behavior was correct.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None affecting the concept or implementation.
+
+**Needs repetition:**
+Maintain attention to exact output format while applying the same default rules to nested destructuring.
 
 For completed exercises, use this format:
 
