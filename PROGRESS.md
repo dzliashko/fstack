@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 026 — Default object for a destructured parameter — completed independently.`
+`Exercise 027 — Nested destructured function parameter — completed independently.`
 
 ## Recommended next action
 
-After confirming that the student wants to continue, introduce nested destructuring and carefully distinguish a missing nested object from missing properties inside an existing nested object. Revisit shallow-copy boundaries, strict boolean checks, and selecting `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+After confirming that the student wants to continue, introduce optional properties and safe nested access, including the distinction between optional chaining and defaulting. Then use a small object-phase checkpoint before moving to runtime data validation. Revisit `find` versus `filter` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -1146,6 +1146,32 @@ None affecting the concept or implementation.
 
 **Needs repetition:**
 Maintain attention to exact output format while applying the same default rules to nested destructuring.
+
+## Exercise 027 — Nested destructured function parameter
+
+**Topic:**
+Nested destructuring in a function parameter, defaults for the argument, nested object, and nested properties, plus binding behavior for path keys.
+
+**Project connection:**
+Flattening optional feed refresh settings into a predictable configuration object.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can safely destructure a missing nested object using `= {}`, preserve explicit falsy values, return a normalized flat shape, and explain that a property used only as a nested destructuring path does not create a local variable with that name.
+
+**Problems encountered:**
+None; full, missing-object, empty, omitted-argument, explicit-undefined, partial-setting, falsy-value, source-preservation, and `null` boundary checks passed.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+Compare nested destructuring defaults with optional chaining when nested values may be `null` as well as missing.
 
 For completed exercises, use this format:
 
