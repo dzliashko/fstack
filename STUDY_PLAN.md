@@ -444,7 +444,7 @@ Model and validate feed refresh status or article state as a finite set of allow
 
 Status:
 
-`Not started`
+`In progress — started on 2026-09-08. Validation of unknown top-level values, non-empty strings, plain object-like Feed shapes, boolean validator contracts, and safe short-circuit ordering has been practiced. Finite status values, deeper shape composition, and defensive boundary handling remain.`
 
 ---
 

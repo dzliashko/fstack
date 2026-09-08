@@ -40,15 +40,15 @@ Study pace:
 
 ## Current topic
 
-`Phase 1.6 — Objects completed; ready to begin Phase 1.7 — JavaScript data modeling and runtime validation.`
+`Phase 1.7 — JavaScript data modeling and runtime validation in progress.`
 
 ## Current exercise
 
-`Exercise 029 — Objects and arrays immutable-update checkpoint — completed with a small clarification.`
+`Exercise 030 — Runtime validation of a Feed shape — completed independently.`
 
 ## Recommended next action
 
-After confirming that the student wants to continue, begin Phase 1.7 with consistent object shapes and the distinction between trusted internal data and unknown runtime input. Introduce small explicit validation functions before finite status sets. Revisit `find` versus `filter`, exact output formats, and `??` versus `||` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+After confirming that the student wants to continue, introduce finite allowed status values and compose their validator with the existing Feed shape checks. Reinforce the difference between validating unknown data and normalizing or mutating it. Revisit `find` versus `filter`, exact output formats, and `??` versus `||` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -1224,6 +1224,32 @@ Keep descriptions synchronized with the exact operator used; `??` falls back onl
 
 **Needs repetition:**
 Revisit `??` versus `||` when validating or normalizing malformed runtime data.
+
+## Exercise 030 — Runtime validation of a Feed shape
+
+**Topic:**
+Unknown runtime values, non-empty string validation, object/null/array distinctions, validator composition, boolean contracts, and safe short-circuit ordering.
+
+**Project connection:**
+Checking that a prospective Feed value has required nonblank `title` and `url` fields before application code trusts the shape.
+
+**Result:**
+Completed independently.
+
+**What I understood:**
+Can write a reusable string predicate, reject primitives, `null`, and arrays before property access, compose property validators, preserve inputs, and trace exactly where an `&&` chain stops for `null`.
+
+**Problems encountered:**
+None; normal, blank-string, missing-property, wrong-type, null, array, primitive, boolean-result, non-mutation, and exception-safety checks passed.
+
+**Hints required:**
+None.
+
+**Important mistake:**
+None.
+
+**Needs repetition:**
+Apply the same guard ordering to deeper shapes and keep validation separate from cleanup or normalization.
 
 For completed exercises, use this format:
 
