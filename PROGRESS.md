@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 031 — Validation against a finite status set — completed with a conceptual explanation.`
+`Exercise 032 — Composed Feed validator with an optional field — completed with a small hint.`
 
 ## Recommended next action
 
-After confirming that the student wants to continue, compose the finite status validator with the existing Feed shape validator, keeping validation separate from normalization or mutation. Reinforce empty-collection semantics and the difference between structural validity and business-operation eligibility. Revisit `find` versus `filter`, exact output formats, and `??` versus `||` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+After confirming that the student wants to continue, distinguish validation from normalization with a small two-step boundary example: validate already-correct data versus intentionally producing a normalized copy. Reinforce safe guard ordering and optional-field semantics. Revisit empty-collection business rules, exact output formats, and `??` versus `||` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -1276,6 +1276,32 @@ Empty-collection behavior comes from the function's contract: absence of invalid
 
 **Needs repetition:**
 Revisit vacuous truth and explicit non-empty business constraints in later collection validators and bulk operations.
+
+## Exercise 032 — Composed Feed validator with an optional field
+
+**Topic:**
+Validator composition, required versus optional fields, safe guard ordering, early returns, and validation without normalization or mutation.
+
+**Project connection:**
+Validating a complete Feed candidate with required title, URL, finite status, and optional description.
+
+**Result:**
+Completed with a small hint.
+
+**What I understood:**
+Can compose small validators into a readable Feed-shape validator and explain that an optional field may be absent or `undefined`, but must satisfy its own type/content contract when present.
+
+**Problems encountered:**
+The first version destructured `description` before validating the top-level container, causing `TypeError` for `null` and `undefined`. The revised version validates the container first and passes all normal, malformed, optional-field, boolean-result, exception-safety, and non-mutation checks.
+
+**Hints required:**
+Small direction hint to validate the container before reading or destructuring properties.
+
+**Important mistake:**
+Never read or destructure properties from unknown input before its containing shape has been validated.
+
+**Needs repetition:**
+Apply container-first guard ordering to nested runtime data and API request bodies.
 
 For completed exercises, use this format:
 
