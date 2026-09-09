@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 032 — Composed Feed validator with an optional field — completed with a small hint.`
+`Exercise 033 — Feed normalization after validation — completed with a conceptual explanation.`
 
 ## Recommended next action
 
-After confirming that the student wants to continue, distinguish validation from normalization with a small two-step boundary example: validate already-correct data versus intentionally producing a normalized copy. Reinforce safe guard ordering and optional-field semantics. Revisit empty-collection business rules, exact output formats, and `??` versus `||` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+After confirming that the student wants to continue, compose validation and normalization in a boundary function that never calls the normalizer when validation fails and returns an explicit result shape. Reinforce function contracts, preconditions, and exact code tracing. Revisit empty-collection business rules and `??` versus `||` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -1302,6 +1302,32 @@ Never read or destructure properties from unknown input before its containing sh
 
 **Needs repetition:**
 Apply container-first guard ordering to nested runtime data and API request bodies.
+
+## Exercise 033 — Feed normalization after validation
+
+**Topic:**
+Validation versus normalization, function preconditions, immutable normalization, optional string handling, and shallow-copy behavior.
+
+**Project connection:**
+Producing a consistently trimmed Feed object after an external candidate has already passed validation.
+
+**Result:**
+Completed with a conceptual explanation.
+
+**What I understood:**
+Can return a normalized copy without mutating the source, preserve status and unknown properties, safely normalize an optional string, and explain that a normalizer with a validated-input precondition need not duplicate boundary validation.
+
+**Problems encountered:**
+Implementation passed required-field, optional-field, extra-property, identity, repeated-call, and non-mutation checks. During code tracing, a type guard for `description` was initially misattributed to `title`, leading to an incorrect prediction that `title: 42` would be returned unchanged rather than throw.
+
+**Hints required:**
+Conceptual explanation and direct code-tracing correction.
+
+**Important mistake:**
+When predicting runtime behavior, associate each guard with the exact expression it protects; validation preconditions do not exist unless the caller actually enforces them.
+
+**Needs repetition:**
+Practice tracing validation-to-normalization control flow and identifying which operations are protected by each guard.
 
 For completed exercises, use this format:
 
