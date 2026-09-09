@@ -44,11 +44,11 @@ Study pace:
 
 ## Current exercise
 
-`Exercise 033 — Feed normalization after validation — completed with a conceptual explanation.`
+`Exercise 034 — Safe Feed preparation pipeline — completed with a small hint.`
 
 ## Recommended next action
 
-After confirming that the student wants to continue, compose validation and normalization in a boundary function that never calls the normalizer when validation fails and returns an explicit result shape. Reinforce function contracts, preconditions, and exact code tracing. Revisit empty-collection business rules and `??` versus `||` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
+After confirming that the student wants to continue, validate a nested Article/ArticleState shape defensively, applying container-first guard ordering at each nested boundary and strict booleans for state. Reinforce exact guard-to-operation matching and explicit result contracts. Revisit empty-collection business rules and `??` versus `||` through spaced repetition. Verify the Phase 0.2 development-environment skills separately rather than assuming they are mastered.
 
 ---
 
@@ -1328,6 +1328,32 @@ When predicting runtime behavior, associate each guard with the exact expression
 
 **Needs repetition:**
 Practice tracing validation-to-normalization control flow and identifying which operations are protected by each guard.
+
+## Exercise 034 — Safe Feed preparation pipeline
+
+**Topic:**
+Boundary orchestration, validation-before-normalization control flow, explicit success/error result objects, early returns, and immutable normalized output.
+
+**Project connection:**
+Preparing unknown Feed input for trusted application use without throwing on ordinary validation failures.
+
+**Result:**
+Completed with a small hint.
+
+**What I understood:**
+Can combine validators and a normalizer behind one safe boundary function, return mutually exclusive success/error shapes, prevent normalization of invalid input, preserve source data, and trace both branches through their helper calls and early returns.
+
+**Problems encountered:**
+The initial normalizer guarded the URL operation with a repeated `typeof normalized.title` check and contained a spelling error in `normalizedFeed`. After a direction hint, the guard was aligned with `url` and the variable name corrected; all success, failure, identity, extra-property, and non-mutation checks passed.
+
+**Hints required:**
+Small direction hint to compare each guard with the operation it protects.
+
+**Important mistake:**
+A guard must validate the exact value used by the protected operation; a nearby valid field does not make another field safe.
+
+**Needs repetition:**
+Trace nested validators and ensure every property read is dominated by validation of its own containing value.
 
 For completed exercises, use this format:
 
